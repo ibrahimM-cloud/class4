@@ -1,20 +1,79 @@
-body {
-    background: #20232a;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
 
-#game-container {
+body{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
 }
 
-canvas {
-    background: #222;
-    border: 2px solid #09d3ac;
-    border-radius: 8px;
-    box-shadow: 0 0 20px #09d3ac44;
+
+
+
+
+.profile-card{
+    background-color:beige ;
+    width: 350px;
+    height: 500px;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+.image{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+
+.social{
+    background-color: grey;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    align-items: end;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+button{
+    margin-top: 30px;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+button:active{
+    scale: 200;
+    animation: reverse;
+}
+label{
+    color: red;
+}
+#toggle :checked ~ .profile-card{
+    display: none;
 }
